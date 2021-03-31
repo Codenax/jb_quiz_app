@@ -10,7 +10,7 @@ class QuizeAdd extends Component
 {
     use WithPagination;
     protected $paginationTheme = 'bootstrap'; 
-    public $hiddenId, $quiz_name, $quiz_one, $quiz_two, $quiz_three, $quiz_four, $ans;
+    public $hiddenId, $quiz_name, $option_a, $option_b, $option_c, $option_d, $ans;
     public $updateMode = false;
 
     public function render()
@@ -22,27 +22,28 @@ class QuizeAdd extends Component
     private function resetInput()
     {
         $this->quiz_name = null;
-        $this->quiz_one = null;
-        $this->quiz_two = null;
-        $this->quiz_three = null;
-        $this->quiz_four = null;
+        $this->option_a = null;
+        $this->option_b = null;
+        $this->option_c = null;
+        $this->option_d = null;
         $this->ans = null;
     }
 
     public function submit(){
         $this->validate([
             'quiz_name' => 'required',
-            'quiz_one' => 'required',
-            'quiz_two' => 'required',
-            'quiz_three' => 'required',
-            'quiz_four' => 'required',
+            'option_a' => 'required',
+            'option_b' => 'required',
+            'option_c' => 'required',
+            'option_d' => 'required',
+            'ans' => 'required',
         ]);
         $quiz = New Quize();
         $quiz->quiz_name        = $this->quiz_name;
-        $quiz->a     = $this->quiz_one;
-        $quiz->b     = $this->quiz_two;
-        $quiz->c   = $this->quiz_three;
-        $quiz->d    = $this->quiz_four;
+        $quiz->a     = $this->option_a;
+        $quiz->b     = $this->option_b;
+        $quiz->c   = $this->option_c;
+        $quiz->d    = $this->option_d;
         $quiz->ans    = $this->ans;
         $quiz->save();
         session()->flash('message', 'Quiz has been created');
@@ -53,31 +54,31 @@ class QuizeAdd extends Component
         $edit_quiz = Quize::findOrFail($id);
         $this->hiddenId     = $id;
         $this->quiz_name    = $edit_quiz->quiz_name;
-        $this->quiz_one     = $edit_quiz->a;
-        $this->quiz_two     = $edit_quiz->b;
-        $this->quiz_three   = $edit_quiz->c;
-        $this->quiz_four    = $edit_quiz->d;
+        $this->option_a     = $edit_quiz->a;
+        $this->option_b     = $edit_quiz->b;
+        $this->option_c   = $edit_quiz->c;
+        $this->option_d    = $edit_quiz->d;
         $this->ans          = $edit_quiz->ans;
         $this->updateMode = true;
-
     }
 
     public function update(){
         $this->validate([
             'quiz_name' => 'required',
-            'quiz_one' => 'required',
-            'quiz_two' => 'required',
-            'quiz_three' => 'required',
-            'quiz_four' => 'required',
+            'option_a' => 'required',
+            'option_b' => 'required',
+            'option_c' => 'required',
+            'option_d' => 'required',
+            'ans' => 'required',
         ]);
         if($this->hiddenId){
             $update_quiz = Quize::findOrFail($this->hiddenId);
             $update_quiz->update([
                 'quiz_name' => $this->quiz_name,
-                'a' => $this->quiz_one,
-                'b' => $this->quiz_two,
-                'c' => $this->quiz_three,
-                'd' => $this->quiz_four,
+                'a' => $this->option_a,
+                'b' => $this->option_b,
+                'c' => $this->option_c,
+                'd' => $this->option_d,
                 'ans' => $this->ans,
             ]);
             session()->flash('message', 'Quiz has been updated');

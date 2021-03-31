@@ -14,24 +14,24 @@
         </div>
 
         <div class="col-span-12">
-            <label for="">Quiz One</label>
-            <input type="text" wire:model="quiz_one" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="quiz one">
-            @error('quiz_one') <small class="text-red-500">{{$message}}</small> @enderror
+            <label for="">Option A</label>
+            <input type="text" wire:model="option_a" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="Option A">
+            @error('option_a') <small class="text-red-500">{{$message}}</small> @enderror
         </div>
         <div class="col-span-12">
-            <label for="">Quiz Two</label>
-            <input type="text" wire:model="quiz_two" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="quiz two">
-            @error('quiz_two') <small class="text-red-500">{{$message}}</small> @enderror
+            <label for="">Option B</label>
+            <input type="text" wire:model="option_b" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="Option B">
+            @error('option_b') <small class="text-red-500">{{$message}}</small> @enderror
         </div>
         <div class="col-span-12">
-            <label for="">Quiz Three</label>
-            <input type="text" wire:model="quiz_three" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="quiz three">
-            @error('quiz_three') <small class="text-red-500">{{$message}}</small> @enderror
+            <label for="">Option C</label>
+            <input type="text" wire:model="option_c" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="Option C">
+            @error('option_c') <small class="text-red-500">{{$message}}</small> @enderror
         </div>
         <div class="col-span-12">
-            <label for="">Quiz Four</label>
-            <input type="text" wire:model="quiz_four" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="quiz four">
-            @error('quiz_four') <small class="text-red-500">{{$message}}</small> @enderror
+            <label for="">Option D</label>
+            <input type="text" wire:model="option_d" class="w-full rounded backdrop border border-green-300 h-8 bg-white bg-opacity-10 focus:outline-none px-2" placeholder="Option D">
+            @error('option_d') <small class="text-red-500">{{$message}}</small> @enderror
         </div>
         <div class="col-span-12">
             <label for="">Quiz Answer</label>
