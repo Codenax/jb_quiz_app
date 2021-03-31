@@ -9,7 +9,7 @@ use Livewire\WithPagination;
 class QuizeAdd extends Component
 {
     use WithPagination;
-    protected $paginationTheme = 'bootstrap';
+    protected $paginationTheme = 'bootstrap'; 
     public $hiddenId, $quiz_name, $quiz_one, $quiz_two, $quiz_three, $quiz_four, $ans;
     public $updateMode = false;
 
@@ -63,10 +63,15 @@ class QuizeAdd extends Component
     }
 
     public function update(){
-
+        $this->validate([
+            'quiz_name' => 'required',
+            'quiz_one' => 'required',
+            'quiz_two' => 'required',
+            'quiz_three' => 'required',
+            'quiz_four' => 'required',
+        ]);
         if($this->hiddenId){
             $update_quiz = Quize::findOrFail($this->hiddenId);
-
             $update_quiz->update([
                 'quiz_name' => $this->quiz_name,
                 'a' => $this->quiz_one,
@@ -87,7 +92,4 @@ class QuizeAdd extends Component
             $record->delete();
         }
     }
-
-
-
 }

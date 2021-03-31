@@ -6,10 +6,10 @@
                     <tr>
                         <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >#SL</th>
                         <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz Name</th>
-                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz A</th>
-                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz B</th>
-                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz C</th>
-                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz D</th>
+                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Option A</th>
+                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Option B</th>
+                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Option C</th>
+                        <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Option D</th>
                         <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Quiz Answer</th>
                         <th class="px-2 py-2 border-b border-gray-300 text-left text-white text-sm" >Action</th>
                     </tr>
