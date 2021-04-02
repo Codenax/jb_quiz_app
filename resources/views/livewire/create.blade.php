@@ -45,7 +45,7 @@
               </div> 
         </div>
         <div class="col-span-12">
-           <button type="submit" wire:click="submit()" class="text-center text-white w-full rounded backdrop border border-green-300 h-10 bg-white bg-opacity-10 focus:outline-none px-2 shadow p-2 ">Create Quiz</button>
+           <button type="submit" wire:click="submit()" class="text-center text-white w-full rounded backdrop border border-green-300 h-10 jb-button focus:outline-none px-2 shadow p-2 ">Create Quiz</button>
         </div>
     </div>
 </div>

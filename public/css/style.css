@@ -1,0 +1,32 @@
+.bg-gray-900 {
+    background-image: linear-gradient(
+        to left top,
+        #020e21,
+        #002c45,
+        #004c5d,
+        #006c61,
+        #098b51
+    );
+}
+select {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+}
+option {
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+}
+.jb-button {
+    background-color: rgb(10, 141, 97);
+}
+input::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+h1{
+    font-size:revert !important;
+   
+}  
+/* .display-1{
+    font-size: 50px;
+} */
