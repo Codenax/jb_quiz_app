@@ -1,7 +1,7 @@
 @extends('layouts.quiz-app')
 
 @section('content')
-<div class="bg-white rounded p-3 w-1/2 ">
+<div class="bg-white rounded p-3  md:w-1/2 w-full">
 
     <div class="grid grid-cols-3 gap-4">
         <div><P class="text-white rounded shadow text-center text-md uppercase py-3 w-full bg-green-600">Correct: {{Session::get('correct')}} </P></div>

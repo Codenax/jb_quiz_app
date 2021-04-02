@@ -1,7 +1,7 @@
 @extends('layouts.quiz-app')
 
 @section('content')
-<div class="bg-white rounded p-3 w-1/3 ">
+<div class="bg-white rounded p-3 md:w-1/3 w-full">
     <form action="/submit-ans" method="post">
         @csrf
     <ul>
