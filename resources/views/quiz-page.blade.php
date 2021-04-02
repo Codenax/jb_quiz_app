@@ -5,7 +5,7 @@
     <form action="/submit-ans" method="post">
         @csrf
     <ul>
-        <h2 class="text-2xl mb-5">#{{Session::get("nextq")}}: {{$question->quiz_name}}</h2>
+        <h2 class="text-2xl mb-5">{{Session::get("nextq")}}: {{$question->quiz_name}}</h2>
         <li>A) <input type="radio" value="a" name="ans" ><label class="ml-3 text-lg font-bold" for="">{{$question->a}}</label> </li>
         <li>B) <input type="radio" value="b" name="ans" ><label class="ml-3 text-lg font-bold" for="">{{$question->b}}</label> </li>
         <li>C) <input type="radio" value="c" name="ans" ><label class="ml-3 text-lg font-bold" for="">{{$question->c}}</label> </li>
