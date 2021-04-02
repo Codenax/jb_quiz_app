@@ -36,7 +36,7 @@
             <label for="">Quiz Answer</label>
             <div class="relative inline-flex w-full">
                 <select wire:model="ans" class="border w-full rounded backdrop border-green-300  bg-white bg-opacity-10 text-black focus:outline-none">
-                
+                  <option>Select Answer</option>
                   <option value="a">Option A</option>
                   <option value="b">Option B</option>
                   <option value="c">Option C</option>
